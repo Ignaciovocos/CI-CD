@@ -29,17 +29,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
- # instala QEMU y lo configura
+ //instala QEMU y lo configura//
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
- # aca estamos usando una action en este caso de login
- # a dockerhub pasandole los parametros  
+ //aca estamos usando una action en este caso de login//
+ //a dockerhub pasandole los parametros//  
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
             username: ${{ secrets.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_PASSWORD }}
- # construir la imagen y pushearla
+ //construir la imagen y pushearla//
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
