@@ -27,8 +27,4 @@ jobs:
           push: true
           tags: ignaciovocos/punto3:${{ github.sha }}
 
-docker-run:
-  runs-on: ubuntu-latest
-  name: Docker run
-  steps:
-    - run: docker run ignaciovocos/punto3:${{ github.sha }}
+
