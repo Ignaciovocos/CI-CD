@@ -6,7 +6,7 @@ Luego es sumamente importante crear un Dockerfile en el cual podamos indicar que
 la cual nos va a permitir poder "hostear" nuestro index.html , le indicamos tambien que debe ser copiado dentro de nuestro nginx y donde va a ser expuesto el puerto.
 
 Para poder crear la imagen nos situamos en nuestra terminal donde se encuentra el Dockerfile e ingresamos el comando
-"sudo docker build -t nginximagen . para poder crear la imagen que estamos buscando.
+"sudo docker build -t nginximagen ." para poder crear la imagen que estamos buscando.
 
 El Dockerfile genera una imagen de nginx que contiene el index.html que va a hostear.
 
